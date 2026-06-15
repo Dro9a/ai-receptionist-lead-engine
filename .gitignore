@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Environment secrets
+.env
+setup/.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node modules (if J uses npm)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
