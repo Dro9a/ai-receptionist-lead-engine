@@ -1,0 +1,167 @@
+[
+  {
+    "id": "followup-8b320738",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:23:58.272886+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-2f7b056e",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:24:17.052758+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-b74e57d7",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:24:29.433709+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-b522b70a",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:25:46.451471+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-314fd3d4",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:26:04.015676+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-72bcda22",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:26:19.635565+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-a27dde32",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:26:59.815991+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-17abceb9",
+    "customer_id": "goru-demo",
+    "name": "goranshu",
+    "phone": "905959589",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:30:15.929782+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-2d071b17",
+    "customer_id": "goru-demo",
+    "name": "goranshu",
+    "phone": "905959589",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:30:35.514092+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-c5d07c2d",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:38:18.151769+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-72635f80",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:38:28.790309+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-1be901a7",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:38:41.447829+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-6d8ae359",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:40:32.229041+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-5f2ea599",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T16:40:42.694924+00:00",
+    "due": "soon"
+  },
+  {
+    "id": "followup-e0e663d9",
+    "customer_id": "rahul-demo",
+    "name": "Rahul",
+    "phone": "9876543210",
+    "email": null,
+    "reason": "Automated engagement tracking trigger",
+    "status": "pending",
+    "created_at": "2026-06-15T17:21:01.038243+00:00",
+    "due": "soon"
+  }
+]

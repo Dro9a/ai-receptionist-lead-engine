@@ -1,0 +1,214 @@
+{
+  "rahul-demo": [
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "yes 5 pm"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "ll"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "Hi, I want to join this week. My budget is Rs 3000 per month."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for asking. We have multiple plan options depending on your goals and preferred timing. Could you share your budget range and whether you prefer morning or evening batches?"
+    },
+    {
+      "role": "user",
+      "content": "3000 and evening"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "5 pm and 0000009999"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "Hi, I want to join this week. My budget is Rs 3000 per month."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for asking. We have multiple plan options depending on your goals and preferred timing. Could you share your budget range and whether you prefer morning or evening batches?"
+    },
+    {
+      "role": "user",
+      "content": "Hi, I want to join this week. My budget is Rs 3000 per month."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for asking. We have multiple plan options depending on your goals and preferred timing. Could you share your budget range and whether you prefer morning or evening batches?"
+    },
+    {
+      "role": "user",
+      "content": "3000 and evening"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "999999999 and 5 pm"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "hello"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "i am looking for gym"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "5 pm or around"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "eving"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "Hi, I want to join this week. My budget is Rs 3000 per month."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for asking. We have multiple plan options depending on your goals and preferred timing. Could you share your budget range and whether you prefer morning or evening batches?"
+    },
+    {
+      "role": "user",
+      "content": "3000"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "5pm and 88888989"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "gym evening"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    }
+  ],
+  "goru-demo": [
+    {
+      "role": "user",
+      "content": "Hi, I want to join this week. My budget is Rs 3000 per month."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for asking. We have multiple plan options depending on your goals and preferred timing. Could you share your budget range and whether you prefer morning or evening batches?"
+    },
+    {
+      "role": "user",
+      "content": "yes 3000 inr"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    },
+    {
+      "role": "user",
+      "content": "i am looking at 5 pm and 98989798789"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    }
+  ],
+  "jk": [
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    }
+  ],
+  "demo": [
+    {
+      "role": "user",
+      "content": "I will think about it and get back to you later."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for reaching out. I can help you choose the right option. Could you share what you are looking for, your preferred timeline, and your contact number?"
+    }
+  ]
+}
