@@ -1,0 +1,922 @@
+[
+  {
+    "conversation_id": "CONV-001",
+    "customer_id": "CUST-001",
+    "timestamp": "2026-01-12T18:05:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Hi, I just moved to Bandra. Looking for a serious gym for muscle gain."
+      },
+      {
+        "role": "ai",
+        "text": "Welcome to the neighbourhood! We have a fully-equipped strength floor, 4 certified coaches and an annual premium plan with unlimited PT. What's your training experience?"
+      },
+      {
+        "role": "customer",
+        "text": "I've been lifting for 3 years. Can I start this week?"
+      },
+      {
+        "role": "ai",
+        "text": "Absolutely. I can book a free posture assessment today at 7:30 PM. Shall I lock that slot?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes, please."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-002",
+    "customer_id": "CUST-002",
+    "timestamp": "2026-01-12T19:10:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Hello, do you have personal trainers who specialise in weight loss for women?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — we have 2 female-certified trainers (NSCA & ACE) and a nutritionist on staff. Could you share your goal weight and timeline?"
+      },
+      {
+        "role": "customer",
+        "text": "I want to lose 8 kg in 4 months."
+      },
+      {
+        "role": "ai",
+        "text": "Very realistic. A 12-week PT + diet plan is ₹18,500. I can also schedule a free consultation with Coach Meera tomorrow at 8 AM."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-003",
+    "customer_id": "CUST-003",
+    "timestamp": "2026-01-12T20:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "What are your monthly membership fees?"
+      },
+      {
+        "role": "ai",
+        "text": "Our monthly membership is ₹3,499 including access to all equipment, group classes and locker."
+      },
+      {
+        "role": "customer",
+        "text": "Hmm, I'll think about it."
+      },
+      {
+        "role": "ai",
+        "text": "No pressure at all. I'll save your details and check in next week. Is WhatsApp okay?"
+      },
+      {
+        "role": "customer",
+        "text": "Yeah, WhatsApp is fine."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-004",
+    "customer_id": "CUST-004",
+    "timestamp": "2026-01-13T07:45:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have morning yoga batches?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — Vinyasa at 6:30 AM, Hatha at 7:30 AM and a beginner-friendly session at 8:15 AM, Mon–Sat."
+      },
+      {
+        "role": "customer",
+        "text": "Perfect, I'll try the 7:30 one."
+      },
+      {
+        "role": "ai",
+        "text": "Great choice. First trial class is free — should I register you for tomorrow?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-005",
+    "customer_id": "CUST-005",
+    "timestamp": "2026-01-13T14:20:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I need a corporate plan for 15 employees. What's the pricing?"
+      },
+      {
+        "role": "ai",
+        "text": "We offer 20% off on annual plans for 10+ members, plus dedicated trainer slots and health-check tie-ups. I'll email a custom proposal by evening."
+      },
+      {
+        "role": "customer",
+        "text": "Send it to vikram.singh@mycompany.in, please."
+      },
+      {
+        "role": "ai",
+        "text": "Noted. I'll also call you tomorrow around 2:30 PM to walk you through it. Good time?"
+      },
+      {
+        "role": "customer",
+        "text": "Works for me."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-006",
+    "customer_id": "CUST-006",
+    "timestamp": "2026-01-13T15:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I had a baby 6 months back. Do you have post-pregnancy programmes?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — our 'Return to Strength' programme covers pelvic floor rehab, core rebuilding and nutrition. I recommend Coach Sneha, she's specialised in this."
+      },
+      {
+        "role": "customer",
+        "text": "Can you call me next week? I'm busy with the baby right now."
+      },
+      {
+        "role": "ai",
+        "text": "Of course. I'll call you next Tuesday between 9–11 AM. Congratulations on your little one! 🍼"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-007",
+    "customer_id": "CUST-007",
+    "timestamp": "2026-01-13T20:15:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I want a serious muscle-gain plan. What PT packages do you have?"
+      },
+      {
+        "role": "ai",
+        "text": "We have 12-session (₹12,000), 24-session (₹22,000) and 48-session (₹40,000) bundles, all with custom diet charts."
+      },
+      {
+        "role": "customer",
+        "text": "24 sessions sounds good. Do you have evening slots after 8?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — 8 PM, 8:45 PM and 9:30 PM are available on Mon/Wed/Fri. Which works?"
+      },
+      {
+        "role": "customer",
+        "text": "8:45 PM Mon/Wed/Fri, booked."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-008",
+    "customer_id": "CUST-008",
+    "timestamp": "2026-01-13T21:05:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "How much does a diet consultation cost?"
+      },
+      {
+        "role": "ai",
+        "text": "A single session with our in-house nutritionist is ₹800, including a 30-day meal plan. A 3-month package is ₹2,200."
+      },
+      {
+        "role": "customer",
+        "text": "I'm busy now, will check later."
+      },
+      {
+        "role": "ai",
+        "text": "Sure — I'll send you the plan on WhatsApp. Feel free to ping back anytime!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-009",
+    "customer_id": "CUST-009",
+    "timestamp": "2026-01-14T08:30:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have any yoga or meditation classes?"
+      },
+      {
+        "role": "ai",
+        "text": "We have 6 yoga formats weekly plus a Sunday guided meditation. Would you like a free trial?"
+      },
+      {
+        "role": "customer",
+        "text": "Maybe later, I'm travelling this week."
+      },
+      {
+        "role": "ai",
+        "text": "Noted. I'll follow up when you're back. Safe travels! ✈️"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-010",
+    "customer_id": "CUST-010",
+    "timestamp": "2026-01-14T17:40:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Is there a student discount?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — 25% off on monthly plans with a valid college ID. That brings it down to ₹2,624/month."
+      },
+      {
+        "role": "customer",
+        "text": "Okay cool, can I take a trial first?"
+      },
+      {
+        "role": "ai",
+        "text": "Absolutely. Drop in anytime between 5–7 PM with your ID and we'll give you a free day pass."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-011",
+    "customer_id": "CUST-011",
+    "timestamp": "2026-01-14T09:15:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "My doctor said I need to control my cholesterol. Can your trainers help?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — we design cardio-heavy, medically-aware programmes. We also tie up with nearby labs for quarterly lipid tests."
+      },
+      {
+        "role": "customer",
+        "text": "How much does the quarterly plan cost?"
+      },
+      {
+        "role": "ai",
+        "text": "₹14,000 for 3 months, includes unlimited cardio zone access and 2 PT sessions/week."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-012",
+    "customer_id": "CUST-012",
+    "timestamp": "2026-01-14T19:50:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I work long hours sitting. Looking for posture correction classes."
+      },
+      {
+        "role": "ai",
+        "text": "We run 'Desk Reset' sessions on Tue & Thu at 7 PM — mix of Pilates and mobility work. Want to try one?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes, please register me for Thursday."
+      },
+      {
+        "role": "ai",
+        "text": "Done. See you Thursday at 7 PM, wear comfortable clothes!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-013",
+    "customer_id": "CUST-013",
+    "timestamp": "2026-01-14T20:30:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I want to bulk up in 6 months. Can your gym get me there?"
+      },
+      {
+        "role": "ai",
+        "text": "100%. Our coaches have prepped 40+ clients for amateur bodybuilding. I'd start you on a 12-week PT plan + diet."
+      },
+      {
+        "role": "customer",
+        "text": "What's the total cost?"
+      },
+      {
+        "role": "ai",
+        "text": "Annual plan + 48 PT sessions comes to ₹62,000 — best value for serious bulking goals."
+      },
+      {
+        "role": "customer",
+        "text": "Let me discuss with my wife and get back."
+      },
+      {
+        "role": "ai",
+        "text": "Of course. I'll follow up on Saturday evening. Take your time!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-014",
+    "customer_id": "CUST-014",
+    "timestamp": "2026-01-15T10:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have women-only batches?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — we have a women-only floor open 6 AM–12 PM and a dedicated women's batch at 5 PM."
+      },
+      {
+        "role": "customer",
+        "text": "Great, I'll visit this weekend."
+      },
+      {
+        "role": "ai",
+        "text": "Lovely! Saturday at 11 AM is great for a guided tour. I'll reserve a slot."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-015",
+    "customer_id": "CUST-015",
+    "timestamp": "2026-01-15T06:40:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Looking for an early-morning HIIT batch. Anything before 6:30?"
+      },
+      {
+        "role": "ai",
+        "text": "We have a 5:30 AM HIIT class Mon–Fri with Coach Arjun, very popular with finance folks."
+      },
+      {
+        "role": "customer",
+        "text": "Sold. How do I join?"
+      },
+      {
+        "role": "ai",
+        "text": "I'll send you a sign-up link. Annual premium is ₹65,000 with early-bird discount until Friday."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-016",
+    "customer_id": "CUST-016",
+    "timestamp": "2026-01-15T18:20:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Hi, just enquiring about timings."
+      },
+      {
+        "role": "ai",
+        "text": "We're open 5 AM–11 PM on weekdays, 6 AM–10 PM on weekends."
+      },
+      {
+        "role": "customer",
+        "text": "Ok thanks."
+      },
+      {
+        "role": "ai",
+        "text": "Anytime! Ping me if you want a quick tour."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-017",
+    "customer_id": "CUST-017",
+    "timestamp": "2026-01-15T08:10:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm diabetic type-2. Can trainers here handle it safely?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — our trainers are trained in exercise prescription for diabetes. We'll also coordinate with your doctor if you share reports."
+      },
+      {
+        "role": "customer",
+        "text": "That's reassuring. I'll join next month after my check-up."
+      },
+      {
+        "role": "ai",
+        "text": "Understood. I'll check in on 1st Feb. Wishing you good health meanwhile 🙏"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-018",
+    "customer_id": "CUST-018",
+    "timestamp": "2026-01-15T17:55:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have dance fitness classes? Zumba or Bollywood?"
+      },
+      {
+        "role": "ai",
+        "text": "We run Bollywood dance fitness on Mon/Wed at 6 PM and Zumba on Tue/Thu at 6:15 PM."
+      },
+      {
+        "role": "customer",
+        "text": "Sounds fun! How much is it?"
+      },
+      {
+        "role": "ai",
+        "text": "Included in the ₹2,499 monthly group-class pass. First session is free!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-019",
+    "customer_id": "CUST-019",
+    "timestamp": "2026-01-15T21:10:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm a competitive runner. Do you have track training or plyo?"
+      },
+      {
+        "role": "ai",
+        "text": "We have a plyo zone and a turf. Coach Harsh (ex-national athlete) runs a weekly speed clinic on Sundays."
+      },
+      {
+        "role": "customer",
+        "text": "That's exactly what I need. Let's do annual + his coaching."
+      },
+      {
+        "role": "ai",
+        "text": "Great choice — I'll draft your plan and share by tomorrow 10 AM."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-020",
+    "customer_id": "CUST-020",
+    "timestamp": "2026-01-16T07:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I get back pain from coding. What do you suggest?"
+      },
+      {
+        "role": "ai",
+        "text": "I'd recommend core strengthening + mobility work. We have a 'Coder's Back' programme — 8 weeks, twice a week."
+      },
+      {
+        "role": "customer",
+        "text": "What does it cost?"
+      },
+      {
+        "role": "ai",
+        "text": "₹9,500 for the 8-week programme, includes PT and a posture assessment."
+      },
+      {
+        "role": "customer",
+        "text": "I'll think about it."
+      },
+      {
+        "role": "ai",
+        "text": "No problem. I'll share a free 10-min desk-mobility video meanwhile. May I WhatsApp it?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes please."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-021",
+    "customer_id": "CUST-021",
+    "timestamp": "2026-01-16T19:45:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I sit 10 hours a day designing. Need posture correction."
+      },
+      {
+        "role": "ai",
+        "text": "Yoga + 1:1 PT twice a week works wonders for this. We have evening slots from 7 PM."
+      },
+      {
+        "role": "customer",
+        "text": "Can I get a combo price?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — Annual Yoga + 24 PT sessions bundled at ₹34,000 (save ₹6,000)."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-022",
+    "customer_id": "CUST-022",
+    "timestamp": "2026-01-16T08:30:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "As a nutritionist, I'd love to see your diet plans before joining."
+      },
+      {
+        "role": "ai",
+        "text": "Happy to share samples. Our plans are macro-based and aligned with ICMR guidelines. Shall I email 3 sample plans?"
+      },
+      {
+        "role": "customer",
+        "text": "Please, to tara.srinivasan@gmail.com."
+      },
+      {
+        "role": "ai",
+        "text": "Sent. I'll follow up Friday to discuss. Thanks, Tara!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-023",
+    "customer_id": "CUST-023",
+    "timestamp": "2026-01-16T07:15:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm 48 with knee issues. Do you have senior-friendly programmes?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — low-impact strength, aqua fitness and yoga for seniors. We also have a physio on-call."
+      },
+      {
+        "role": "customer",
+        "text": "That sounds good. I'll visit on Sunday."
+      },
+      {
+        "role": "ai",
+        "text": "We're open 6 AM–10 PM Sundays. I'll have Coach Amit meet you at the entrance."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-024",
+    "customer_id": "CUST-024",
+    "timestamp": "2026-01-16T15:40:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I work in a hotel, shifts are irregular. Do you have 24-hour access?"
+      },
+      {
+        "role": "ai",
+        "text": "We're open 5 AM–11 PM. For shift workers, we also offer early 5 AM and late 10 PM PT slots."
+      },
+      {
+        "role": "customer",
+        "text": "Okay, I'll take the quarterly + diet plan."
+      },
+      {
+        "role": "ai",
+        "text": "Excellent. I'll send the payment link and onboarding form now."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-025",
+    "customer_id": "CUST-025",
+    "timestamp": "2026-01-16T21:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm a fitness content creator. Do you allow filming inside?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — with prior permission and during non-peak hours. We also offer creator partnerships."
+      },
+      {
+        "role": "customer",
+        "text": "I'd love to collab. Who handles that?"
+      },
+      {
+        "role": "ai",
+        "text": "I'll loop in our marketing head. Can I share your Instagram handle?"
+      },
+      {
+        "role": "customer",
+        "text": "@yash.lifts — please go ahead!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-026",
+    "customer_id": "CUST-003",
+    "timestamp": "2026-01-15T19:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Rohan, checking in — did you get a chance to think about the monthly plan?"
+      },
+      {
+        "role": "customer",
+        "text": "Yeah, but ₹3,500 feels a bit steep."
+      },
+      {
+        "role": "ai",
+        "text": "I can offer a ₹500 welcome discount if you join by Sunday. Still interested?"
+      },
+      {
+        "role": "customer",
+        "text": "Okay, let me pay on Sunday evening."
+      },
+      {
+        "role": "ai",
+        "text": "Perfect. I'll hold the discounted slot for you."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-027",
+    "customer_id": "CUST-006",
+    "timestamp": "2026-01-20T10:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Sneha, following up as promised. Ready to discuss the post-pregnancy programme?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes! I'm free tomorrow morning."
+      },
+      {
+        "role": "ai",
+        "text": "Great — I've booked you with Coach Meera tomorrow at 9:30 AM. See you!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-028",
+    "customer_id": "CUST-008",
+    "timestamp": "2026-01-16T11:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Neha, sending over the diet consultation plan as promised."
+      },
+      {
+        "role": "customer",
+        "text": "Thanks. Can I get a discount?"
+      },
+      {
+        "role": "ai",
+        "text": "If you bundle it with a quarterly membership, I can give you the diet plan at 50% off (₹400)."
+      },
+      {
+        "role": "customer",
+        "text": "Deal. Send me the link."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-029",
+    "customer_id": "CUST-009",
+    "timestamp": "2026-01-18T09:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Aditya, hope your trip went well. Want to book a yoga trial?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes, this Saturday works."
+      },
+      {
+        "role": "ai",
+        "text": "Booked for Saturday 7:30 AM Hatha. See you!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-030",
+    "customer_id": "CUST-013",
+    "timestamp": "2026-01-18T19:30:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Siddharth, any decision on the annual + PT plan?"
+      },
+      {
+        "role": "customer",
+        "text": "Wife is on board. Let's do it."
+      },
+      {
+        "role": "ai",
+        "text": "🎉 Sending the onboarding link now. Welcome to the family!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-031",
+    "customer_id": "CUST-018",
+    "timestamp": "2026-01-17T18:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Can I try one Zumba class before paying?"
+      },
+      {
+        "role": "ai",
+        "text": "Absolutely — free trial this Thursday 6:15 PM. Wear sneakers!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-032",
+    "customer_id": "CUST-011",
+    "timestamp": "2026-01-17T09:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "What's the refund policy if I don't like it?"
+      },
+      {
+        "role": "ai",
+        "text": "We offer a 7-day money-back guarantee on quarterly and annual plans, no questions asked."
+      },
+      {
+        "role": "customer",
+        "text": "Okay, that's fair. I'll join."
+      },
+      {
+        "role": "ai",
+        "text": "Welcome aboard! I'll send the paperwork."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-033",
+    "customer_id": "CUST-016",
+    "timestamp": "2026-01-16T19:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have parking?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — free 2-wheeler parking and ₹30/hour car parking with membership validation."
+      },
+      {
+        "role": "customer",
+        "text": "Cool, thanks."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-034",
+    "customer_id": "CUST-020",
+    "timestamp": "2026-01-17T07:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Shreya, here's the free desk-mobility video I promised: [link]"
+      },
+      {
+        "role": "customer",
+        "text": "Thanks, that's helpful. I'll consider the programme."
+      },
+      {
+        "role": "ai",
+        "text": "Take your time — I'll check in next week."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-035",
+    "customer_id": "CUST-010",
+    "timestamp": "2026-01-17T17:30:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Can I pay monthly via UPI?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — we accept UPI, cards and net banking. Autopay available too for 5% extra discount."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-036",
+    "customer_id": "CUST-014",
+    "timestamp": "2026-01-18T11:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Are there locker facilities?"
+      },
+      {
+        "role": "ai",
+        "text": "Yes — complimentary lockers with your own padlock, or rent ours for ₹200/month."
+      },
+      {
+        "role": "customer",
+        "text": "Good to know."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-037",
+    "customer_id": "CUST-017",
+    "timestamp": "2026-02-01T09:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Manish, checking in as promised. How did your check-up go?"
+      },
+      {
+        "role": "customer",
+        "text": "Reports are stable. Let's start the programme next week."
+      },
+      {
+        "role": "ai",
+        "text": "Excellent. I'll book your induction session for Monday 7 AM."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-038",
+    "customer_id": "CUST-021",
+    "timestamp": "2026-01-18T20:00:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Do you have any corporate tie-ups?"
+      },
+      {
+        "role": "ai",
+        "text": "We partner with 12 IT parks in Pune — I can check if your company is on the list. Which company?"
+      },
+      {
+        "role": "customer",
+        "text": "Infosys Hinjewadi."
+      },
+      {
+        "role": "ai",
+        "text": "Yes — you get 15% off. Want me to apply it to your plan?"
+      },
+      {
+        "role": "customer",
+        "text": "Yes please."
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-039",
+    "customer_id": "CUST-023",
+    "timestamp": "2026-01-19T07:30:00+05:30",
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Visited on Sunday. Very clean facility!"
+      },
+      {
+        "role": "ai",
+        "text": "Thank you Amit ji! Would you like to start with the senior quarterly plan?"
+      },
+      {
+        "role": "customer",
+        "text": "Let me think for a couple of days."
+      },
+      {
+        "role": "ai",
+        "text": "Sure. I'll follow up on Wednesday. Jai Hind 🇮🇳"
+      }
+    ]
+  },
+  {
+    "conversation_id": "CONV-040",
+    "customer_id": "CUST-025",
+    "timestamp": "2026-01-18T22:00:00+05:30",
+    "messages": [
+      {
+        "role": "ai",
+        "text": "Hi Yash, our marketing head loved your reel. She'd like to schedule a collab call."
+      },
+      {
+        "role": "customer",
+        "text": "Amazing! I'm free Thursday evening."
+      },
+      {
+        "role": "ai",
+        "text": "Thursday 8:30 PM booked. She'll share a brand-deck beforehand."
+      }
+    ]
+  }
+]

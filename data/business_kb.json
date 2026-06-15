@@ -1,0 +1,266 @@
+{
+  "business_name": "IronPulse Fitness Studio",
+  "tagline": "Train hard. Recover smart. Live better.",
+  "location": "Koramangala 5th Block, Bangalore 560095",
+  "contact": {
+    "phone": "+91 80 4567 8900",
+    "whatsapp": "+91 98450 12345",
+    "email": "hello@ironpulse.in",
+    "instagram": "@ironpulse.fit"
+  },
+  "timings": {
+    "weekdays": "5:00 AM – 11:00 PM",
+    "saturday": "6:00 AM – 10:00 PM",
+    "sunday": "6:00 AM – 10:00 PM",
+    "holiday": "7:00 AM – 1:00 PM"
+  },
+  "membership_plans": [
+    {
+      "name": "Monthly",
+      "price": 3499,
+      "duration": "30 days",
+      "includes": [
+        "All equipment",
+        "Group classes",
+        "Locker",
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "name": "Quarterly",
+      "price": 8999,
+      "duration": "90 days",
+      "includes": [
+        "All Monthly benefits",
+        "1 free PT session",
+        "Diet consultation (1)"
+      ]
+    },
+    {
+      "name": "Annual",
+      "price": 29999,
+      "duration": "365 days",
+      "includes": [
+        "All Quarterly benefits",
+        "4 PT sessions",
+        "2 diet consults",
+        "Free fitness assessment"
+      ]
+    },
+    {
+      "name": "Annual Premium",
+      "price": 49999,
+      "duration": "365 days",
+      "includes": [
+        "All Annual benefits",
+        "Unlimited PT",
+        "Priority booking",
+        "Guest passes (6)"
+      ]
+    },
+    {
+      "name": "Student Monthly",
+      "price": 2624,
+      "duration": "30 days",
+      "includes": [
+        "25% student discount on Monthly",
+        "Valid college ID required"
+      ]
+    },
+    {
+      "name": "Yoga-only Monthly",
+      "price": 2499,
+      "duration": "30 days",
+      "includes": [
+        "All yoga formats",
+        "Meditation Sundays"
+      ]
+    },
+    {
+      "name": "Corporate Annual",
+      "price": "Custom",
+      "duration": "365 days",
+      "includes": [
+        "20% off for 10+ members",
+        "Dedicated trainer",
+        "Health check tie-up"
+      ]
+    }
+  ],
+  "personal_training": {
+    "packages": [
+      {
+        "sessions": 12,
+        "price": 12000,
+        "per_session": 1000
+      },
+      {
+        "sessions": 24,
+        "price": 22000,
+        "per_session": 917
+      },
+      {
+        "sessions": 48,
+        "price": 40000,
+        "per_session": 833
+      }
+    ],
+    "trainers": [
+      "Coach Arjun – Strength & Conditioning (NSCA)",
+      "Coach Meera – Women's Fitness & Post-natal (ACE)",
+      "Coach Harsh – Sports Performance (ex-National Athlete)",
+      "Coach Sneha – Rehabilitation & Mobility"
+    ],
+    "slots": [
+      "6:00 AM",
+      "7:00 AM",
+      "5:00 PM",
+      "6:00 PM",
+      "7:00 PM",
+      "8:00 PM",
+      "8:45 PM",
+      "9:30 PM",
+      "10:00 PM"
+    ]
+  },
+  "yoga_classes": [
+    {
+      "name": "Hatha Yoga",
+      "time": "7:30 AM",
+      "days": "Mon–Sat",
+      "level": "All"
+    },
+    {
+      "name": "Vinyasa Flow",
+      "time": "6:30 AM",
+      "days": "Mon–Sat",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Beginner Yoga",
+      "time": "8:15 AM",
+      "days": "Mon–Sat",
+      "level": "Beginner"
+    },
+    {
+      "name": "Power Yoga",
+      "time": "6:00 PM",
+      "days": "Tue/Thu",
+      "level": "Advanced"
+    },
+    {
+      "name": "Yin Yoga",
+      "time": "7:00 PM",
+      "days": "Wed/Fri",
+      "level": "All"
+    },
+    {
+      "name": "Guided Meditation",
+      "time": "9:00 AM",
+      "days": "Sunday",
+      "level": "All"
+    }
+  ],
+  "group_classes": [
+    {
+      "name": "HIIT",
+      "time": "5:30 AM & 7:00 PM",
+      "days": "Mon–Fri"
+    },
+    {
+      "name": "Bollywood Dance Fitness",
+      "time": "6:00 PM",
+      "days": "Mon/Wed"
+    },
+    {
+      "name": "Zumba",
+      "time": "6:15 PM",
+      "days": "Tue/Thu"
+    },
+    {
+      "name": "Pilates",
+      "time": "7:00 PM",
+      "days": "Tue/Thu"
+    },
+    {
+      "name": "Coder's Back (Mobility)",
+      "time": "7:00 PM",
+      "days": "Tue/Thu"
+    },
+    {
+      "name": "Speed Clinic (Running)",
+      "time": "7:00 AM",
+      "days": "Sunday"
+    }
+  ],
+  "diet_consultation": {
+    "single_session": 800,
+    "three_month_package": 2200,
+    "includes": [
+      "Body composition analysis",
+      "Personalised macro plan",
+      "30-day meal chart",
+      "Monthly review"
+    ]
+  },
+  "facilities": {
+    "parking": "Free 2-wheeler; ₹30/hr car (validated)",
+    "lockers": "Complimentary with own padlock; ₹200/month rental",
+    "showers": "Hot & cold showers, towels provided",
+    "wifi": "100 Mbps complimentary",
+    "cafe": "Healthy café with protein shakes & salads"
+  },
+  "trial_sessions": {
+    "policy": "First gym tour + workout free for walk-ins",
+    "yoga_trial": "First yoga class free",
+    "pt_trial": "First PT consultation free",
+    "note": "Carry valid ID"
+  },
+  "refund_policy": {
+    "rule": "7-day money-back guarantee on quarterly and annual plans",
+    "conditions": [
+      "No refund after 7 days",
+      "Monthly plans non-refundable",
+      "PT sessions refundable if not availed"
+    ]
+  },
+  "cancellation_policy": {
+    "membership": "Cancel with 15 days written notice; no refund for remaining days",
+    "pt_sessions": "Reschedule with 12-hour notice; late cancel = session forfeited",
+    "classes": "Reschedule via app up to 2 hours before"
+  },
+  "special_programmes": [
+    "Return to Strength (post-natal)",
+    "Coder's Back (desk-job posture)",
+    "Return to Strength (senior mobility)",
+    "Diabetic-Fitness (medically-aware cardio)",
+    "Competitive Athlete (plyo + speed)",
+    "Creator Partnership (for fitness influencers)"
+  ],
+  "faq": [
+    {
+      "q": "Do you have women-only timings?",
+      "a": "Yes — 6 AM to 12 PM the entire floor is women-only, plus a dedicated 5 PM women's batch."
+    },
+    {
+      "q": "Is there parking?",
+      "a": "Free 2-wheeler parking; ₹30/hr car parking with membership validation."
+    },
+    {
+      "q": "Do you accept UPI?",
+      "a": "Yes — UPI, cards, net banking and autopay (extra 5% discount)."
+    },
+    {
+      "q": "Can I freeze my membership?",
+      "a": "Yes — up to 30 days per year, medical or travel reasons, with documentation."
+    },
+    {
+      "q": "Are trainers certified?",
+      "a": "All coaches hold NSCA / ACE / ISSA / K11 certifications and CPR/AED training."
+    },
+    {
+      "q": "Do you allow filming?",
+      "a": "Yes, with prior permission and during off-peak hours. Creator partnerships available."
+    }
+  ]
+}
