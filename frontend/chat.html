@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Receptionist - Smart Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="chat-page">
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="floating-orb orb-4"></div>
+        <div class="floating-orb orb-5"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-brand">
+            <div class="brand-icon">
+                <i class="fas fa-robot"></i>
+                <div class="brand-pulse"></div>
+            </div>
+            <span class="brand-text">AI Receptionist</span>
+            <span class="brand-badge">POWERED BY HINDSIGHT</span>
+        </div>
+        <div class="nav-links">
+            <a href="chat.html" class="nav-link active">
+                <i class="fas fa-comments"></i>
+                <span>Chat</span>
+            </a>
+            <a href="dashboard.html" class="nav-link">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+        </div>
+        <div class="nav-status">
+            <div class="status-dot online"></div>
+            <span>AI Online</span>
+        </div>
+    </nav>
+
+    <!-- Main Chat Container -->
+    <div class="chat-container">
+        <!-- Left Panel - Customer Info -->
+        <div class="chat-sidebar glass-panel">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-user-circle"></i> Customer Profile</h3>
+                <div class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </div>
+            
+            <!-- Customer Form -->
+            <div class="customer-form">
+                <div class="form-group">
+                    <label><i class="fas fa-id-badge"></i> Customer ID</label>
+                    <input type="text" id="customerId" placeholder="e.g., rahul-demo" value="rahul-demo" class="glass-input">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Name</label>
+                    <input type="text" id="customerName" placeholder="Customer name" value="Rahul" class="glass-input">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> Phone</label>
+                    <input type="text" id="customerPhone" placeholder="Phone number" value="9876543210" class="glass-input">
+                </div>
+            </div>
+
+            <!-- Live Metrics -->
+            <div class="live-metrics">
+                <h4><i class="fas fa-analytics"></i> Live Analysis</h4>
+                
+                <div class="metric-card glass-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Lead Score</span>
+                        <span class="metric-value" id="leadScoreValue">--</span>
+                    </div>
+                    <div class="score-bar">
+                        <div class="score-fill" id="leadScoreFill" style="width: 0%"></div>
+                    </div>
+                    <div class="score-labels">
+                        <span>Cold</span>
+                        <span>Warm</span>
+                        <span>Hot</span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Sentiment</span>
+                        <span class="sentiment-badge" id="sentimentBadge">
+                            <i class="fas fa-minus-circle"></i> Waiting
+                        </span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Engagement</span>
+                        <span class="metric-value" id="engagementValue">0</span>
+                    </div>
+                    <div class="engagement-dots" id="engagementDots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card alert-card" id="hotLeadAlert" style="display:none;">
+                    <div class="alert-content">
+                        <i class="fas fa-fire"></i>
+                        <span>HOT LEAD DETECTED!</span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card alert-card followup-alert" id="followupAlert" style="display:none;">
+                    <div class="alert-content">
+                        <i class="fas fa-clock"></i>
+                        <span>Follow-up Triggered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Main Area -->
+        <div class="chat-main">
+            <div class="chat-header glass-panel">
+                <div class="chat-header-info">
+                    <div class="ai-avatar">
+                        <i class="fas fa-robot"></i>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="chat-header-text">
+                        <h3>AI Receptionist</h3>
+                        <span class="typing-status" id="typingStatus">
+                            <span class="status-text">Ready to help</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="icon-btn" id="clearChat" title="Clear Chat">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button class="icon-btn" id="exportChat" title="Export Chat">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button class="icon-btn" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <div class="welcome-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h2>Welcome to AI Receptionist</h2>
+                    <p>Powered by Hindsight Memory & QWEN-3 AI</p>
+                    <div class="welcome-features">
+                        <div class="feature-chip">
+                            <i class="fas fa-brain"></i>
+                            <span>Long-term Memory</span>
+                        </div>
+                        <div class="feature-chip">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Lead Scoring</span>
+                        </div>
+                        <div class="feature-chip">
+                            <i class="fas fa-heart"></i>
+                            <span>Sentiment Analysis</span>
+                        </div>
+                        <div class="feature-chip">
+                            <i class="fas fa-bell"></i>
+                            <span>Auto Follow-ups</span>
+                        </div>
+                    </div>
+                    <div class="quick-messages">
+                        <p class="quick-label">Try these:</p>
+                        <button class="quick-msg" onclick="sendQuickMessage('Hi, I want to join this week. My budget is Rs 3000 per month.')">
+                            💪 Join with Rs 3000 budget
+                        </button>
+                        <button class="quick-msg" onclick="sendQuickMessage('What are your gym timings and membership plans?')">
+                            ⏰ Ask about timings & plans
+                        </button>
+                        <button class="quick-msg" onclick="sendQuickMessage('I will think about it and get back to you later.')">
+                            🤔 I'll think about it
+                        </button>
+                        <button class="quick-msg" onclick="sendQuickMessage('Do you have personal training options?')">
+                            🏋️ Personal training inquiry
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area glass-panel">
+                <div class="input-container">
+                    <div class="input-prefix">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Type your message here..." 
+                        rows="1"
+                        onkeydown="handleKeyDown(event)"
+                    ></textarea>
+                    <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="send-ripple"></span>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="memory-indicator">
+                        <i class="fas fa-database"></i> Hindsight Memory Active
+                    </span>
+                    <span class="char-count" id="charCount">0 / 500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

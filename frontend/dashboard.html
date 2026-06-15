@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Receptionist - Command Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="floating-orb orb-4"></div>
+        <div class="floating-orb orb-5"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-brand">
+            <div class="brand-icon">
+                <i class="fas fa-robot"></i>
+                <div class="brand-pulse"></div>
+            </div>
+            <span class="brand-text">AI Receptionist</span>
+            <span class="brand-badge">COMMAND CENTER</span>
+        </div>
+        <div class="nav-links">
+            <a href="chat.html" class="nav-link">
+                <i class="fas fa-comments"></i>
+                <span>Chat</span>
+            </a>
+            <a href="dashboard.html" class="nav-link active">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+        </div>
+        <div class="nav-actions">
+            <button class="refresh-btn" id="refreshDashboard" onclick="refreshAllData()">
+                <i class="fas fa-sync-alt"></i>
+                <span>Refresh</span>
+            </button>
+            <div class="nav-status">
+                <div class="status-dot online" id="serverStatus"></div>
+                <span id="serverStatusText">Connected</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Role Switcher -->
+    <div class="role-switcher">
+        <button class="role-btn active" data-role="manager" onclick="switchRole('manager')">
+            <i class="fas fa-crown"></i>
+            <span>CEO / Manager View</span>
+        </button>
+        <button class="role-btn" data-role="employee" onclick="switchRole('employee')">
+            <i class="fas fa-headset"></i>
+            <span>Employee View</span>
+        </button>
+    </div>
+
+    <!-- =================== MANAGER DASHBOARD =================== -->
+    <div class="dashboard-container" id="managerDashboard">
+        <!-- Welcome Header -->
+        <div class="dashboard-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>
+                        <span class="greeting" id="greeting">Good Morning</span>, Manager
+                        <span class="wave-emoji">👋</span>
+                    </h1>
+                    <p class="header-subtitle">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="currentDate"></span> &bull; 
+                        <span class="live-clock" id="liveClock"></span>
+                    </p>
+                </div>
+                <div class="header-quick-stats">
+                    <div class="quick-stat glass-card">
+                        <div class="quick-stat-icon green">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="quick-stat-info">
+                            <span class="quick-stat-value" id="systemHealth">Healthy</span>
+                            <span class="quick-stat-label">System Status</span>
+                        </div>
+                    </div>
+                    <div class="quick-stat glass-card">
+                        <div class="quick-stat-icon blue">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="quick-stat-info">
+                            <span class="quick-stat-value">Active</span>
+                            <span class="quick-stat-label">AI Memory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Cards Row -->
+        <div class="kpi-grid">
+            <div class="kpi-card glass-card" data-aos="fade-up" data-delay="0">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-blue">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="totalLeads">0</span>
+                        <span class="kpi-label">Total Leads</span>
+                    </div>
+                    <div class="kpi-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>12%</span>
+                    </div>
+                </div>
+                <div class="kpi-sparkline" id="leadsSparkline"></div>
+            </div>
+
+            <div class="kpi-card glass-card" data-aos="fade-up" data-delay="100">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-green">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="conversionRate">0%</span>
+                        <span class="kpi-label">Conversion Rate</span>
+                    </div>
+                    <div class="kpi-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>8%</span>
+                    </div>
+                </div>
+                <div class="kpi-sparkline" id="conversionSparkline"></div>
+            </div>
+
+            <div class="kpi-card glass-card hot-card" data-aos="fade-up" data-delay="200">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-red">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="hotLeads">0</span>
+                        <span class="kpi-label">Hot Leads Queue</span>
+                    </div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Priority</span>
+                    </div>
+                </div>
+                <div class="kpi-sparkline" id="hotSparkline"></div>
+            </div>
+
+            <div class="kpi-card glass-card" data-aos="fade-up" data-delay="300">
+                <div class="kpi-icon-wrap gradient-purple">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="kpi-info">
+                    <span class="kpi-value counter" id="followupsCount">0</span>
+                    <span class="kpi-label">Pending Follow-ups</span>
+                </div>
+                <div class="kpi-trend warning">
+                    <i class="fas fa-clock"></i>
+                    <span>Today</span>
+                </div>
+            </div>
+
+            <div class="kpi-card glass-card" data-aos="fade-up" data-delay="400">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-gold">
+                        <i class="fas fa-indian-rupee-sign"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="revenueEstimate">₹0</span>
+                        <span class="kpi-label">Revenue Potential</span>
+                    </div>
+                    <div class="kpi-trend up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Monthly</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kpi-card glass-card" data-aos="fade-up" data-delay="500">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-cyan">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="aiHandled">0</span>
+                        <span class="kpi-label">AI Handled</span>
+                    </div>
+                    <div class="kpi-trend up">
+                        <i class="fas fa-bolt"></i>
+                        <span>Auto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="dashboard-grid">
+            <!-- Leads Table -->
+            <div class="dash-card glass-card full-width" data-aos="fade-up">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-table"></i>
+                        <h3>All Leads</h3>
+                        <span class="card-badge" id="leadsCountBadge">0</span>
+                    </div>
+                    <div class="card-actions">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search leads..." id="leadsSearch" oninput="filterLeads()">
+                        </div>
+                        <div class="filter-group">
+                            <button class="filter-btn active" data-filter="all" onclick="filterByScore('all')">All</button>
+                            <button class="filter-btn" data-filter="hot" onclick="filterByScore('hot')">🔥 Hot</button>
+                            <button class="filter-btn" data-filter="warm" onclick="filterByScore('warm')">🟡 Warm</button>
+                            <button class="filter-btn" data-filter="cold" onclick="filterByScore('cold')">🔵 Cold</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="leads-table" id="leadsTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" onclick="sortTable('id')">
+                                    <span>Customer ID</span>
+                                    <i class="fas fa-sort"></i>
+                                </th>
+                                <th class="sortable" onclick="sortTable('name')">
+                                    <span>Name</span>
+                                    <i class="fas fa-sort"></i>
+                                </th>
+                                <th>Phone</th>
+                                <th class="sortable" onclick="sortTable('score')">
+                                    <span>Lead Score</span>
+                                    <i class="fas fa-sort"></i>
+                                </th>
+                                <th>Sentiment</th>
+                                <th>Interest</th>
+                                <th>Budget</th>
+                                <th>Urgency</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leadsTableBody">
+                            <tr class="loading-row">
+                                <td colspan="10">
+                                    <div class="table-loader">
+                                        <div class="loader-spinner"></div>
+                                        <span>Loading leads...</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <span class="table-info" id="tableInfo">Showing 0 leads</span>
+                    <div class="table-pagination">
+                        <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                        <span class="page-num active">1</span>
+                        <button class="page-btn" disabled><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Follow-ups Section -->
+            <div class="dash-card glass-card full-width" data-aos="fade-up">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-bell"></i>
+                        <h3>Pending Follow-ups</h3>
+                        <span class="card-badge warning" id="followupBadge">0</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="action-btn" onclick="refreshFollowups()">
+                            <i class="fas fa-sync-alt"></i>
+                            Refresh
+                        </button>
+                    </div>
+                </div>
+                <div class="followup-grid" id="followupGrid">
+                    <div class="table-loader">
+                        <div class="loader-spinner"></div>
+                        <span>Loading follow-ups...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score Distribution -->
+            <div class="dash-card glass-card half-width" data-aos="fade-up">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Lead Score Distribution</h3>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="donut-chart" id="scoreChart">
+                        <div class="donut-ring">
+                            <svg viewBox="0 0 200 200">
+                                <circle class="donut-segment hot-segment" cx="100" cy="100" r="80" 
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0" id="hotSegment"/>
+                                <circle class="donut-segment warm-segment" cx="100" cy="100" r="80" 
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0" id="warmSegment"/>
+                                <circle class="donut-segment cold-segment" cx="100" cy="100" r="80" 
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0" id="coldSegment"/>
+                            </svg>
+                            <div class="donut-center">
+                                <span class="donut-total" id="donutTotal">0</span>
+                                <span class="donut-label">Total</span>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color hot"></span>
+                                <span class="legend-text">Hot (90+)</span>
+                                <span class="legend-value" id="hotCount">0</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color warm"></span>
+                                <span class="legend-text">Warm (50-89)</span>
+                                <span class="legend-value" id="warmCount">0</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color cold"></span>
+                                <span class="legend-text">Cold (0-49)</span>
+                                <span class="legend-value" id="coldCount">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="dash-card glass-card half-width" data-aos="fade-up">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Performance Overview</h3>
+                    </div>
+                </div>
+                <div class="performance-metrics">
+                    <div class="perf-item">
+                        <div class="perf-info">
+                            <span class="perf-label">Average Lead Score</span>
+                            <span class="perf-value" id="avgScore">--</span>
+                        </div>
+                        <div class="perf-bar">
+                            <div class="perf-fill" id="avgScoreFill" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <div class="perf-item">
+                        <div class="perf-info">
+                            <span class="perf-label">AI Response Rate</span>
+                            <span class="perf-value">98%</span>
+                        </div>
+                        <div class="perf-bar">
+                            <div class="perf-fill green" style="width:98%"></div>
+                        </div>
+                    </div>
+                    <div class="perf-item">
+                        <div class="perf-info">
+                            <span class="perf-label">Customer Satisfaction</span>
+                            <span class="perf-value">92%</span>
+                        </div>
+                        <div class="perf-bar">
+                            <div class="perf-fill blue" style="width:92%"></div>
+                        </div>
+                    </div>
+                    <div class="perf-item">
+                        <div class="perf-info">
+                            <span class="perf-label">Memory Recall Accuracy</span>
+                            <span class="perf-value">95%</span>
+                        </div>
+                        <div class="perf-bar">
+                            <div class="perf-fill purple" style="width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="perf-item">
+                        <div class="perf-info">
+                            <span class="perf-label">Follow-up Completion</span>
+                            <span class="perf-value" id="followupCompletion">0%</span>
+                        </div>
+                        <div class="perf-bar">
+                            <div class="perf-fill orange" id="followupCompletionFill" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== EMPLOYEE DASHBOARD =================== -->
+    <div class="dashboard-container" id="employeeDashboard" style="display:none;">
+        <!-- Employee Header -->
+        <div class="dashboard-header employee-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>
+                        <i class="fas fa-headset"></i> Employee Dashboard
+                        <span class="wave-emoji">💼</span>
+                    </h1>
+                    <p class="header-subtitle">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="empCurrentDate"></span> &bull; 
+                        <span class="live-clock" id="empLiveClock"></span>
+                        &bull; Shift: Morning
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee KPIs -->
+        <div class="kpi-grid employee-kpi">
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-blue">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="empLiveChats">0</span>
+                        <span class="kpi-label">Live Chats Handled</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-green">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="empAiHandled">0</span>
+                        <span class="kpi-label">AI Auto-Handled</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-orange">
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="empLeadsReceived">0</span>
+                        <span class="kpi-label">Leads Received</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-red">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="empHandoffs">0</span>
+                        <span class="kpi-label">Human Handoffs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-purple">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value counter" id="empFollowups">0</span>
+                        <span class="kpi-label">Follow-ups Pending</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-card glass-card">
+                <div class="kpi-card-inner">
+                    <div class="kpi-icon-wrap gradient-cyan">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="kpi-info">
+                        <span class="kpi-value" id="empPerformance">--</span>
+                        <span class="kpi-label">Daily Performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee Action Queue -->
+        <div class="dashboard-grid">
+            <div class="dash-card glass-card full-width">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Action Queue</h3>
+                        <span class="card-badge warning" id="actionQueueBadge">0</span>
+                    </div>
+                </div>
+                <div class="action-queue" id="actionQueue">
+                    <div class="table-loader">
+                        <div class="loader-spinner"></div>
+                        <span>Loading action items...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Conversations -->
+            <div class="dash-card glass-card full-width">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-history"></i>
+                        <h3>Recent Leads</h3>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="leads-table" id="empLeadsTable">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Phone</th>
+                                <th>Score</th>
+                                <th>Sentiment</th>
+                                <th>Status</th>
+                                <th>Quick Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="empLeadsTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Lead Detail Modal -->
+    <div class="modal-overlay" id="leadModal" style="display:none;">
+        <div class="modal glass-card">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-circle"></i> Lead Details</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Initialize dashboard on load
+        document.addEventListener('DOMContentLoaded', () => {
+            initDashboard();
+        });
+    </script>
+</body>
+</html>
